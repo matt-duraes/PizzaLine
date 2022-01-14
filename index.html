@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pizzaria</title>
+    <script>
+        window.onload = function () {
+            document.querySelector(".menuMobile").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display == 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display == 'flex';
+                }
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">
+                    <img src="img/logo.png" alt="logo da loja" height="70px;">
+                </a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#geral">Cardápio</a></li>
+                        <li><a href="">Promoções</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>A melhor pizza de Brasília</h1>
+                <h2>Faça já o seu pedido!</h2>
+            </div>
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title">Mais vendidas</div>
+                    <div class="banner_desc">Venha conferir nosso ranking semanal de pizzas mais vendidas.</div>
+                    <a href="#">Ver todos</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">Cardápio</div>
+                    <div class="banner_desc">Acesse o nosso cardápio e tenha em mãos todas as nossas opções</div>
+                    <a href="#">Acessar cardápio</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">Horário de funcionamento </div>
+                    <div class="week">
+                        Segunda a sexta:
+                        <div class="horario">18:00- 23:00</div>
+                    </div>
+                    <div class="weekend">
+                        Finais de semana:
+                        <div class="horario">20:00-01:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Cardápio</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body flex">
+                        <article>
+                            <div class="tumb">
+                                <img src="img/calabresa.jpg" alt="pizza de calabresa">
+                            </div>
+                            <div class="news_title">Pizza de calabresa</div>
+                            <div class="news_resume-container">
+                                <div class="news_resume_item_text">
+                                    <p>Mussarela, Catupiry,Ricota e Gorgonzola.</p>
+                                </div>
+
+                                <a href="#" class="news_resume_item_button">COMPRAR</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tumb">
+                                <img src="img/frango.jpg" alt="pizza de frango">
+                            </div>
+                            <div class="news_title">Pizza de Frango</div>
+                            <div class="news_resume-container">
+                                <div class="news_resume_item_text">
+                                    <p>Mussarela, Catupiry,Ricota e Gorgonzola.</p>
+                                </div>
+
+                                <a href="#" class="news_resume_item_button">COMPRAR</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tumb">
+                                <img src="img/lombo.jpg" alt="pizza de lombo">
+                            </div>
+                            <div class="news_title">Pizza de lombo</div>
+                            <div class="news_resume-container">
+                                <div class="news_resume_item_text">
+                                    <p>Mussarela,Lombo,Catupiry,Tomate,Bacon e Batata palha.
+                                    </p>
+                                </div>
+
+
+                                <a href="#" class="news_resume_item_button">COMPRAR</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="tumb">
+                                <img src="img/4queijo.jpg" alt="pizza de calabresa">
+                            </div>
+                            <div class="news_title">Pizza de 4 queijos</div>
+                            <div class="news_resume-container ">
+                                <div class="news_resume_item_text">
+                                    <p>Mussarela, Catupiry,Ricota e Gorgonzola.</p>
+                                </div>
+
+
+                                <a href="#" class="news_resume_item_button">COMPRAR</a>
+                            </div>
+
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Pizzas</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">...</div>
+                </div>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Contato</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">...</div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Atendimento ao cliente</div>
+                            <div class="widget_title_bar"></div>
+                            <div class="news_resume">
+                                <a href="#">Fale Conosco</a> <br />
+                                <a href="#">Franquias</a> <br />
+                                <a href="#">Pesquisa de Satisfação</a> <br />
+                            </div>
+                        </div>
+                        <div class="widget_body"></div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Termos</div>
+                            <div class="widget_title_bar"></div>
+                            <div class="news_resume">
+                                <a href="#">Política de Privacidade</a> <br />
+                                <a href="#">Política de cookies e anúncios</a> <br />
+                                <a href="#">Termos de uso</a> <br />
+                            </div>
+                        </div>
+                        <div class="widget_body"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">
+                Desenvolvido por<a href="https://www.instagram.com/matt.duraes/" target="_blank">@Matt.duraes</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script>
+        window.onload = function () {
+            document.querySelector(".menuMobile").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display == 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display == 'flex';
+                }
+            })
+        }
+    </script>
+
+</body>
+
+</html>
